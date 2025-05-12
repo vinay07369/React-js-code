@@ -7,11 +7,11 @@ const App = () => {
 
   let multiply =(num)=>{
 
-      console.log("I am inside multiply function")
-
-      for(let i = 1 ; i<1000000000;i++)
+    for(let i = 1 ; i<100000000000;i++)
       {
-
+        
+    
+             
       }
      return num * 2 
   }
@@ -19,6 +19,7 @@ const App = () => {
   // let res = multiply(num)
 
   let res = useMemo(()=>{
+    console.log("I am inside multiply function")
     return multiply(num)
   },[num])
   
